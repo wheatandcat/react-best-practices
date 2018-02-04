@@ -1,0 +1,74 @@
+env:
+  es6: true
+  node: true
+  jasmine: true
+extends:
+  - standard
+  - standard-react
+parser: babel-eslint
+plugins:
+  - flowtype
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    jsx: true
+  sourceType: module
+rules:
+  generator-star-spacing:
+    - 0
+  jsx-quotes:
+    - error
+    - prefer-double
+  arrow-parens:
+    - error
+    - as-needed
+  space-before-function-paren:
+    - error
+    - never
+  handle-callback-err:
+    - error
+    - error
+  comma-dangle:
+    - error
+    - arrays: always-multiline
+      objects: always-multiline
+      imports: ignore
+      exports: ignore
+      functions: ignore
+  standard/object-curly-even-spacing:
+    - error
+    - always
+  indent:
+    - 0
+  quotes:
+    - error
+    - double
+  semi:
+    - error
+    - never
+  react/require-default-props: "off"
+  react/jsx-filename-extension:
+    - error
+    -
+      extensions:
+        - ".js"
+  jsx-a11y/href-no-hash: "off"
+  jsx-a11y/anchor-is-valid: "off"
+  no-underscore-dangle:
+    - error
+    -
+      allow:
+        - __get__
+        - __Rewire__
+  import/no-extraneous-dependencies:
+    - error
+    -
+      devDependencies:
+        - "**/*.test.js"
+        - "**/stories.js"
+        - ".storybook/**"
+        - "jest-setup.js"
+      optionalDependencies: false
+      peerDependencies: false
+  flowtype/no-weak-types:
+    - error
