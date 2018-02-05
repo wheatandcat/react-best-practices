@@ -48,9 +48,8 @@ const Paper = styled(MuiPaper)`
   text-align: center;
 `
 
-const Plain = ({ items, onGet }: Props) => (
+export const Plain = ({ items, onGet }: Props) => (
   <Root>
-    {console.log(items)}
     <Paper>
       <Typography type="title" gutterBottom>
         Welcome to page !

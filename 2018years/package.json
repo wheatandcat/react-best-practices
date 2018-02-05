@@ -1,0 +1,38 @@
+{
+  "name": "2018years",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "server": "node mock/app.js",
+    "prettier": "prettier --config ./.prettierrc --write ./src/**/{*.js,*.ts}",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "author": "wheatandcat",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.3.11",
+    "@storybook/addon-knobs": "^3.3.11",
+    "@storybook/addon-options": "^3.3.11",
+    "@storybook/cli": "^3.3.11",
+    "@storybook/react": "^3.3.11",
+    "@storybook/storybook-deployer": "^2.2.0",
+    "babel-preset-react-app": "^3.1.1",
+    "parcel-bundler": "^1.5.1",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "json-server": "^0.12.1",
+    "material-ui": "^1.0.0-beta.32",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "node-fetch": "^2.0.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^3.1.6"
+  }
+}

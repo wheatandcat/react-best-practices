@@ -1,8 +1,8 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import { withKnobs } from "@storybook/addon-knobs"
-import { Plain } from "./Page"
+import Page from "./Page"
 
-storiesOf("Pages/Welcome", module)
+storiesOf("Pages/SignIn", module)
   .addDecorator(withKnobs)
-  .add("Page", () => <Plain items={[]} onGet={() => {}} />)
+  .add("Page", () => <Page />)
