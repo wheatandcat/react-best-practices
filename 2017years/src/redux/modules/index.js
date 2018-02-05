@@ -28,7 +28,7 @@ export default combineReducers({
   item,
 })
 
-export function* rootSaga() {
+export function* rootSaga(): Generator<*, *, *> {
   yield all([
     takeLatest("SIGNIN/SIGNIN", signinSaga),
     takeLatest("SIGNIN/SIGNOUT", signoutSaga),

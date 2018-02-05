@@ -1,4 +1,5 @@
 [ignore]
+./flow-typed/npm/redux-saga_v0.16.x.js
 
 [include]
 

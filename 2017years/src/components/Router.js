@@ -2,7 +2,7 @@
 import React from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import Auth from "../redux/containers/Auth"
-import Welcome from "../components/Pages/Welcome/Page"
+import Welcome from "../redux/containers/Welcome"
 import SignOut from "../redux/containers/SignOut"
 
 export default () => (

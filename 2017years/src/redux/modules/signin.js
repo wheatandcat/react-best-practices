@@ -30,6 +30,10 @@ export type Action =
   | {
       type: "SIGNIN/AUTH",
     }
+  | {
+      type: "SIGNIN/CHANGE_TOKEN",
+      +payload: string,
+    }
 // Actions
 
 export const changeEmail = (email: string) => ({
@@ -89,9 +93,9 @@ export default (state: State = initState, action: Action): State => {
 }
 
 // saga
-const getSignin = (state: State) => state.signin
+const getSignin = (state: { signin: State }) => state.signin
 
-export function* signinSaga() {
+export function* signinSaga(): Generator<*, *, *> {
   const { email, password } = yield select(getSignin)
 
   const response = yield call(fetch, "http://localhost:8080/sigin", {
@@ -113,7 +117,7 @@ export function* signinSaga() {
   yield put(changeToken(token))
 }
 
-export function* authSaga() {
+export function* authSaga(): Generator<*, *, *> {
   const { token } = yield select(getSignin)
 
   if (!token) {
@@ -133,7 +137,7 @@ export function* authSaga() {
   yield put(signedIn(signed))
 }
 
-export function* signoutSaga() {
+export function* signoutSaga(): Generator<*, *, *> {
   yield put(changeToken(""))
   yield put(signedIn(false))
 }

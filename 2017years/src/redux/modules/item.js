@@ -1,6 +1,7 @@
 // @flow
 import { put, call, select } from "redux-saga/effects"
 import fetch from "node-fetch"
+import { type State as SigninState } from "./signin"
 
 // Types
 
@@ -23,6 +24,10 @@ export type Action =
       +payload: Array<Item>,
     }
 
+export const getItems = () => ({
+  type: "ITEM/GET",
+})
+
 export const changeItems = (items: Array<Item>) => ({
   payload: items,
   type: "ITEM/CHANGE_ITEMS",
@@ -42,9 +47,9 @@ export default (state: State = initState, action: Action): State => {
 }
 
 // saga
-const getToken = (state: State) => state.signin.token
+const getToken = (state: { signin: SigninState }) => state.signin.token
 
-export function* itemsSaga() {
+export function* itemsSaga(): Generator<*, *, *> {
   const token = yield select(getToken)
 
   if (!token) {
