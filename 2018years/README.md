@@ -22,3 +22,13 @@ npm start
 ```
 npm run server
 ```
+
+* prettier
+```
+npm run eslint
+```
+
+* storybook
+```
+npm run storybook
+```

@@ -28,3 +28,18 @@ yarn start
 ```
 yarn server
 ```
+
+* eslint
+```
+yarn eslint
+```
+
+* flow
+```
+yarn flow
+```
+
+* storybook
+```
+yarn storybook
+```

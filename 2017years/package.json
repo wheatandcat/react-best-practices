@@ -29,10 +29,11 @@
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-eslint": "^8.2.1",
     "babel-plugin-rewire": "^1.1.0",
-    "eslint": "^4.15.0",
+    "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-flow-vars": "^0.5.0",
     "eslint-plugin-flowtype": "^2.41.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
@@ -49,8 +50,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "storybook": "STORYBOOK_ENV=storybook start-storybook -p 9009 -s public",
-    "build-storybook": "STORYBOOK_ENV=storybook build-storybook -s public",
-    "deploy-storybook": "STORYBOOK_ENV=storybook storybook-to-ghpages"
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages",
+    "eslint": "eslint ./src/"
   }
 }

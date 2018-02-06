@@ -8,6 +8,7 @@ extends:
 parser: babel-eslint
 plugins:
   - flowtype
+  - flow-vars
 parserOptions:
   ecmaFeatures:
     experimentalObjectRestSpread: true
@@ -71,4 +72,8 @@ rules:
       optionalDependencies: false
       peerDependencies: false
   flowtype/no-weak-types:
+    - error
+  flow-vars/use-flow-type:
+    - error
+  flow-vars/define-flow-type:
     - error
