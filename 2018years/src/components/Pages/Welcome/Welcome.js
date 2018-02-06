@@ -16,7 +16,7 @@ const Paper = styled(MuiPaper)`
 export default ({ children }) => (
   <Paper>
     <Typography variant="title" gutterBottom>
-      Welcome to react-best-practics 2018years !
+      Welcome to react-best-practices 2018years !
     </Typography>
     <br />
     <Typography variant="caption" gutterBottom>

@@ -52,7 +52,7 @@ export const Plain = ({ items, onGet }: Props) => (
   <Root>
     <Paper>
       <Typography type="title" gutterBottom>
-        Welcome to react-best-practics 2017years !
+        Welcome to react-best-practices 2017years !
       </Typography>
 
       <br />

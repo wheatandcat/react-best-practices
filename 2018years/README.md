@@ -1,4 +1,4 @@
-# react-best-practics (2018)
+# react-best-practices (2018)
 
 ## example
  * (easy example)Login and log out, implement api access
