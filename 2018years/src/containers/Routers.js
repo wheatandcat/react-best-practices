@@ -1,11 +1,12 @@
-import React from "react"
-import { BrowserRouter, Switch, Route } from "react-router-dom"
-import Welcome from "../components/Pages/Welcome/Page"
-import SignIn from "../components/Pages/SignIn/Connected"
-import AuthProvider, { Auth } from "./Auth"
-import App from "./App"
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Welcome from "../components/Pages/Welcome/Page";
+import SignIn from "../components/Pages/SignIn/Connected";
+import SignOut from "../components/Pages/SignOut/Connected";
+import AuthProvider, { Auth } from "./Auth";
+import App from "./App";
 
-const auth = new Auth()
+const auth = new Auth();
 
 export default () => (
   <div>
@@ -16,6 +17,7 @@ export default () => (
           <App>
             <div>
               <Switch>
+                <Route path="/signout" component={SignOut} />
                 <Route component={Welcome} />
               </Switch>
             </div>
@@ -24,4 +26,4 @@ export default () => (
       </AuthProvider>
     </BrowserRouter>
   </div>
-)
+);

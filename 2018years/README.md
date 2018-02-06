@@ -1,30 +1,24 @@
-# react-best-practics (2017)
+# react-best-practics (2018)
 
 ## example
  * (easy example)Login and log out, implement api access
 
 ## packages
  * react
- * react-scripts
- * redux
- * redux-saga
- * redux-localstorage
+ * typescript
  * react-router
- * recompose
  * styled-components
  * storybook
- * eslint
  * prettier
- * flow-bin
- * webpack
+ * parcel-bundler
 
 ## scripts
  * start
 ```
-yarn start
+npm start
 ```
 
 * server
 ```
-yarn server
+npm run server
 ```

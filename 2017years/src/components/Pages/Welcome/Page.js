@@ -42,8 +42,8 @@ const Root = styled.div`
 `
 
 const Paper = styled(MuiPaper)`
-  width: 90%;
-  height: 90%;
+  width: 30rem;
+  height: 20rem;
   padding: 10rem;
   text-align: center;
 `
@@ -52,7 +52,7 @@ export const Plain = ({ items, onGet }: Props) => (
   <Root>
     <Paper>
       <Typography type="title" gutterBottom>
-        Welcome to page !
+        Welcome to react-best-practics 2017years !
       </Typography>
 
       <br />
