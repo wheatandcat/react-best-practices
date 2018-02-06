@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "server": "node mock/app.js",
-    "prettier": "prettier --config ./.prettierrc --write ./src/**/{*.js,*.ts}",
+    "prettier": "prettier --config ./.prettierrc --write ./src/**/{*.js,*.tsx}",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages"
@@ -24,6 +24,7 @@
     "@types/storybook__react": "^3.0.6",
     "babel-preset-react-app": "^3.1.1",
     "parcel-bundler": "^1.5.1",
+    "prettier": "^1.10.2",
     "ts-loader": "^3.4.0",
     "typescript": "^2.7.1"
   },
