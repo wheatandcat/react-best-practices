@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "foo",
+      "description": "Description A"
+    },
+    {
+      "id": 2,
+      "name": "baz",
+      "description": "Description B"
+    }
+  ]
+}
