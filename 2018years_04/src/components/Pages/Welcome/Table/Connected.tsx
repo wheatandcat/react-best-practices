@@ -4,6 +4,13 @@ import * as fetch from "node-fetch";
 import { Consumer } from "../../../../containers/Provider";
 import Table from "./Table";
 
+export interface AuthInterface {
+  getToken: () => string;
+  signedIn: () => boolean;
+  signIn: (email: string, password: string) => void;
+  signOut: () => void;
+}
+
 interface Item {
   id: number;
   name: string;
@@ -11,9 +18,7 @@ interface Item {
 }
 
 interface Props {
-  auth: {
-    getToken: () => string;
-  };
+  auth: AuthInterface;
 }
 
 interface State {
@@ -23,7 +28,9 @@ interface State {
 class Connected extends React.Component<Props, State> {
   state = { items: null };
 
-  static contextTypes = {
+  static contextTy;
+
+  pes = {
     auth: PropTypes.object
   };
 

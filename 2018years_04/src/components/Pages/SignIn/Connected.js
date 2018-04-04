@@ -35,6 +35,7 @@ class Connected extends Component {
     const { email, password } = await this.state.input;
 
     try {
+      console.log(this.props.auth);
       await this.props.auth.signIn(email, password);
       await this.setState({
         signedIn: true

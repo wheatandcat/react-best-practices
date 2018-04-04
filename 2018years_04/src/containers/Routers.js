@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Welcome from "../components/Pages/Welcome/Page";
 import SignIn from "../components/Pages/SignIn/Connected";
 import SignOut from "../components/Pages/SignOut/Connected";
-import Auth from "./Auth.ts";
+import Auth from "./Auth";
 import App from "./App";
 import Provider from "./Provider";
 

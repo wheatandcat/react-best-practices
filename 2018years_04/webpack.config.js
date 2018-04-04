@@ -56,20 +56,5 @@ module.exports = {
   resolve: {
     modules: ["./src", "./node_modules"],
     extensions: [".js", ".jsx"]
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      "process.env.NODE_ENV": '"' + process.env.NODE_ENV + '"',
-      "process.env.REACT_APP_MOCK_API_HOST":
-        '"' +
-        (process.env.REACT_APP_MOCK_API_HOST ||
-          "https://mock-dot-possible-review.appspot.com/") +
-        '"',
-      "process.env.REACT_APP_API_HOST":
-        '"' +
-        (process.env.REACT_APP_API_HOST ||
-          "https://master-dot-backend-dot-possible-review.appspot.com/v1/") +
-        '"'
-    })
-  ]
+  }
 };
