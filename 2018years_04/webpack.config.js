@@ -10,7 +10,8 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "build"),
     port: "3000",
-    open: true
+    open: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -29,27 +30,6 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         use: "ts-loader"
-      },
-      {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              mportLoaders: 1
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 10000
-          }
-        }
       }
     ]
   },

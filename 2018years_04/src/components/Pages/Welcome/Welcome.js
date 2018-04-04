@@ -8,7 +8,7 @@ import Table from "./Table/Connected.tsx";
 
 const Paper = styled(MuiPaper)`
   width: 30rem;
-  height: 20rem;
+  height: 40rem;
   padding: 10rem;
   text-align: center;
 `;
