@@ -5,6 +5,11 @@ import { provider } from "./decorators";
 
 addDecorator(provider);
 
+setOptions({
+  hierarchySeparator: /\/|\./,
+  hierarchyRootSeparator: /\|/
+});
+
 const req = require.context("../src", true, /stories.js$/);
 
 function loadStories() {

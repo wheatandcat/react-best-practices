@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Welcome from "../components/Pages/Welcome/Page";
-import SignIn from "../components/Pages/SignIn/Connected";
-import SignOut from "../components/Pages/SignOut/Connected";
-import Auth from "./Auth";
-import App from "./App";
+import Welcome from "../components/pages/Welcome/Page";
+import SignIn from "../components/pages/SignIn/Connected";
+import SignOut from "../components/pages/SignOut/Connected";
+import Auth from "./Auth.ts";
+import App from "./App.js";
 import Provider from "./Provider";
 
 const auth = new Auth();

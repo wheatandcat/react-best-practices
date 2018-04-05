@@ -3,6 +3,6 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
 import Page from "./Page";
 
-storiesOf("Pages/SignIn", module)
+storiesOf("pages|SignIn", module)
   .addDecorator(withKnobs)
   .add("Page", () => <Page />);

@@ -1,15 +1,9 @@
 import * as React from "react";
 import * as PropTypes from "prop-types";
 import * as fetch from "node-fetch";
-import { Consumer } from "../../../../containers/Provider";
+import { Consumer } from "../../../containers/Provider";
+import { AuthInterface } from "../../../containers/Auth.ts";
 import Table from "./Table";
-
-export interface AuthInterface {
-  getToken: () => string;
-  signedIn: () => boolean;
-  signIn: (email: string, password: string) => void;
-  signOut: () => void;
-}
 
 interface Item {
   id: number;
@@ -50,6 +44,7 @@ class Connected extends React.Component<Props, State> {
     }
 
     const items = await response.json();
+
 
     this.setState({
       items

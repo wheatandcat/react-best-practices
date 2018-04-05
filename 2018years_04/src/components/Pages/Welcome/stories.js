@@ -2,9 +2,9 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
 import Welcome from "./Welcome";
-import Table from "./Table/Table";
+import Table from "components/molecules/Table/Table";
 
-storiesOf("Pages/Welcome", module)
+storiesOf("pages|Welcome", module)
   .addDecorator(withKnobs)
   .add("Welcome", () => (
     <Welcome>

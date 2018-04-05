@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Table from "./Table/Connected.tsx";
+import Table from "components/molecules/Table/Connected.tsx";
 import Welcome from "./Welcome";
 
 const Root = styled.div`

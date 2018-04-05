@@ -1,6 +1,13 @@
 import fetch from "node-fetch";
 
-export default class Auth {
+export interface AuthInterface {
+  getToken: () => string;
+  signedIn: () => boolean;
+  signIn: (email: string, password: string) => void;
+  signOut: () => void;
+}
+
+export default class Auth implements AuthInterface {
   getToken = () => {
     const token = localStorage.getItem("token");
 

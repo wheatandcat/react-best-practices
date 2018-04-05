@@ -4,7 +4,6 @@ import MuiPaper from "material-ui/Paper";
 import Typography from "material-ui/Typography";
 import Button from "material-ui/Button";
 import { Link } from "react-router-dom";
-import Table from "./Table/Connected.tsx";
 
 const Paper = styled(MuiPaper)`
   width: 30rem;
