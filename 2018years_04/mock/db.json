@@ -2,26 +2,61 @@
   "items": [
     {
       "id": 1,
+      "category": "foo",
       "name": "a",
       "description": "Description A"
     },
     {
       "id": 2,
+      "category": "foo",
       "name": "b",
       "description": "Description B"
     },
     {
       "id": 3,
+      "category": "bar",
       "name": "c",
       "description": "Description A"
     },
     {
       "id": 4,
+      "category": "bar",
       "name": "d",
       "description": "Description B"
     },
     {
       "id": 5,
+      "category": "baz",
+      "name": "e",
+      "description": "Description B"
+    },
+    {
+      "id": 6,
+      "category": "foo",
+      "name": "a",
+      "description": "Description A"
+    },
+    {
+      "id": 7,
+      "category": "foo",
+      "name": "b",
+      "description": "Description B"
+    },
+    {
+      "id": 8,
+      "category": "bar",
+      "name": "c",
+      "description": "Description A"
+    },
+    {
+      "id": 9,
+      "category": "bar",
+      "name": "d",
+      "description": "Description B"
+    },
+    {
+      "id": 10,
+      "category": "baz",
       "name": "e",
       "description": "Description B"
     }

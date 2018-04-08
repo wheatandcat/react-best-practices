@@ -5,13 +5,6 @@ import Typography from "material-ui/Typography";
 import Button from "material-ui/Button";
 import { Link } from "react-router-dom";
 
-const Paper = styled(MuiPaper)`
-  width: 30rem;
-  height: 40rem;
-  padding: 10rem;
-  text-align: center;
-`;
-
 export default ({ children }) => (
   <Paper>
     <Typography variant="title" gutterBottom>
@@ -36,3 +29,8 @@ export default ({ children }) => (
     <br />
   </Paper>
 );
+
+const Paper = styled(MuiPaper)`
+  padding: 1rem 5rem;
+  text-align: center;
+`;

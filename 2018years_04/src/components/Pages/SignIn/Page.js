@@ -5,19 +5,6 @@ import TextField from "material-ui/TextField";
 import Typography from "material-ui/Typography";
 import Button from "material-ui/Button";
 
-const Root = styled.div`
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Paper = styled(MuiPaper)`
-  width: 15rem;
-  padding: 3rem 1rem;
-  text-align: center;
-`;
-
 export default ({ onChange, onSignIn }) => (
   <Root>
     <Paper>
@@ -47,3 +34,16 @@ export default ({ onChange, onSignIn }) => (
     </Paper>
   </Root>
 );
+
+const Root = styled.div`
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Paper = styled(MuiPaper)`
+  width: 15rem;
+  padding: 3rem 1rem;
+  text-align: center;
+`;

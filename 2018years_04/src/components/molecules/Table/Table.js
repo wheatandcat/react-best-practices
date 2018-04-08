@@ -11,14 +11,16 @@ export default ({ items }) => (
     <TableHead>
       <TableRow>
         <TableCell>id</TableCell>
+        <TableCell numeric>category</TableCell>
         <TableCell numeric>name</TableCell>
         <TableCell numeric>description</TableCell>
       </TableRow>
     </TableHead>
     <TableBody>
-      {items.map(({ id, name, description }) => (
+      {items.map(({ id, category, name, description }) => (
         <TableRow key={id}>
           <TableCell>{id}</TableCell>
+          <TableCell numeric>{category}</TableCell>
           <TableCell numeric>{name}</TableCell>
           <TableCell numeric>{description}</TableCell>
         </TableRow>
