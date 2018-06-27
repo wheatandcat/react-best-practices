@@ -30,7 +30,7 @@ npm run server
 * prettier
 
 ```
-npm run eslint
+npm run prettier
 ```
 
 * storybook
